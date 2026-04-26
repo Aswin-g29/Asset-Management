@@ -7,7 +7,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 
-from .database import fetch_one
+from database import fetch_one
 
 
 SECRET_KEY = os.getenv("WS_SECRET_KEY", "worksphere-dev-secret-key")

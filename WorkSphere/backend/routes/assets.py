@@ -4,9 +4,9 @@ from uuid import uuid4
 import qrcode
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 
-from ..auth import CurrentUser, require_roles
-from ..database import fetch_all, fetch_one, get_db
-from ..schemas import ApiMessage, AssetCreate, AssetUpdate, Pager
+from auth import CurrentUser, require_roles
+from database import fetch_all, fetch_one, get_db
+from schemas import ApiMessage, AssetCreate, AssetUpdate, Pager
 
 
 router = APIRouter(prefix="/assets", tags=["Assets"])

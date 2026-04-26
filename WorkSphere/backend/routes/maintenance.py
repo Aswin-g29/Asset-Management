@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 
-from ..auth import CurrentUser, require_roles
-from ..database import fetch_all, fetch_one, get_db
-from ..schemas import MaintenanceCreate, MaintenanceUpdate
+from auth import CurrentUser, require_roles
+from database import fetch_all, fetch_one, get_db
+from schemas import MaintenanceCreate, MaintenanceUpdate
 
 
 router = APIRouter(prefix="/maintenance", tags=["Maintenance"])

@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from ..auth import CurrentUser
-from ..database import fetch_all
+from auth import CurrentUser
+from database import fetch_all
 
 
 router = APIRouter(prefix="/dashboard", tags=["Dashboard"])

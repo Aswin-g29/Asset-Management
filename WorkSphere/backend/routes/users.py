@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from ..auth import CurrentUser, hash_password, require_roles
-from ..database import fetch_all, fetch_one, get_db
-from ..schemas import ApiMessage, UserCreate, UserUpdate
+from auth import CurrentUser, hash_password, require_roles
+from database import fetch_all, fetch_one, get_db
+from schemas import ApiMessage, UserCreate, UserUpdate
 
 
 router = APIRouter(prefix="/users", tags=["Users"])

@@ -4,9 +4,9 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from .auth import authenticate_user, create_access_token
-from .routes import assets, dashboard, maintenance, transactions, users
-from .schemas import LoginRequest, TokenResponse
+from auth import authenticate_user, create_access_token
+from routes import assets, dashboard, maintenance, transactions, users
+from schemas import LoginRequest, TokenResponse
 
 
 app = FastAPI(title="WorkSphere Asset Management System", version="1.0.0")

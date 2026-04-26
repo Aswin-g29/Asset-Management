@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from ..auth import CurrentUser, require_roles
-from ..database import fetch_all, fetch_one, get_db
-from ..schemas import AssignmentRequest, TransferRequest
+from auth import CurrentUser, require_roles
+from database import fetch_all, fetch_one, get_db
+from schemas import AssignmentRequest, TransferRequest
 
 
 router = APIRouter(prefix="/transactions", tags=["Transactions"])
